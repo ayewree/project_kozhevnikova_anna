@@ -118,6 +118,63 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Задание 3.6 Динамическая галерея изображений
+document.addEventListener('DOMContentLoaded', function() {
+  const cardsImages = document.querySelector(".article_images");
+
+if (cardsImages) {
+    const cardListImages = cardsImages.querySelector(".article_images_list");
+    const apiUrl = "images.json";
+
+    const createCard = (imageUrl, imageAlt, imageWidth) => {
+        const image = `
+            <li class="article_images_item">
+                <img class="images__picture" src="${imageUrl[0]}" alt="${imageAlt}" width="${imageWidth}">
+                <img class="images__picture" src="${imageUrl[1]}" alt="${imageAlt}" width="${imageWidth}" style="display: none;">
+            </li>
+        `;
+        return image;
+    };
+
+    fetch(apiUrl)
+        .then((response) => response.json())
+        .then((images) => {
+            console.log(images);
+            console.log(typeof images);
+
+            images.forEach((item) => {
+                const cardElement = createCard(
+                    item.imageUrl,
+                    item.imageAlt,
+                    item.imageWidth
+                );
+                cardListImages.insertAdjacentHTML("beforeend", cardElement);
+            });
+
+            const pictures = document.querySelectorAll(".images__picture");
+            if (pictures) {
+                pictures.forEach((picture) => {
+                    picture.addEventListener("click", () => {
+                        const parentItem = picture.parentElement;
+                        const parentPictures = parentItem.querySelectorAll(".images__picture");
+
+                        parentPictures.forEach((parentPicture) => {
+                            if (parentPicture !== picture) {
+                                parentPicture.style.display = "block";
+                            } else {
+                                parentPicture.style.display = "none";
+                            }
+                        });
+                    });
+                });
+            }
+        })
+        .catch((error) => {
+            console.error("Ошибка при загрузке данных:", error);
+        });
+}
+})
+
 //Предзагрузчик
 const preloader = document.querySelector(".preloader");
 const content = document.querySelector(".content");
