@@ -1,0 +1,291 @@
+
+
+html,
+body {
+    font-size: 18px;
+    font-weight: 400;
+    font-style:normal;
+    line-height: 30px;
+    color: #000000;
+    margin: 0;
+    background-color: #f8ded3;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+h1 {
+    color: #724835;
+}
+
+h2 {
+    color: #724835;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section__title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.start__inner {
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+}
+.start__subtitle {
+    line-height: 1.6;
+    max-width: 900px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.start__img {
+    max-width: 150%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.features__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature__content {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+        
+.feature__list {
+    list-style-type: none;
+    padding: 0;
+}
+        
+.feature__list-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 25px;
+}
+
+.breadcrumbs {     
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs__separator {
+    margin: 0 5px;
+    color: #724835;
+}
+
+.download_link{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.download_link button {
+    padding: 8px 15px;
+    background-color: #d7987d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    box-sizing: border-box; 
+}
+
+.download_link button:hover {
+    background-color: #cf8362;
+}
+
+.lesson_container {
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lesson_text {
+    text-align: left;
+    line-height: 1.6;
+    color: #444;
+}
+
+.download_link {
+    width: 80%;
+    max-width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    background: #ffff;
+    border-radius: 2px;
+}
+
+.lesson_18 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; 
+}
+
+.lesson_name {
+    text-align: center;
+    padding: 4px;
+}
+
+.intensive {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.intensive__item {
+    width: 900px;
+    position: relative;
+}
+
+.intensive__img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.intensive__description {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 0px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px #000000;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.intensive__img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.teachers {
+  padding: 10px 0;
+}
+
+.teachers__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.teachers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.teachers__item {
+  width: 360px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.teachers__item:hover {
+  transform: translateY(-10px);
+}
+
+.teachers__img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+.teachers__name {
+  margin: 15px 20px 10px;
+  color: #724835;
+}
+
+.teachers__bio {
+  margin: 0 20px 20px;
+  line-height: 1.5;
+}
+
+.teachers__btn {
+  display: block;
+  width: 320px;
+  margin: 0 20px 20px;
+  padding: 10px;
+  background-color: #91c2bd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.teachers__btn:hover {
+  background-color: #6ca59e;
+}
+
+.article_images_list {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    gap: 10px; 
+    justify-content: center; 
+    list-style-type: none; 
+    margin: 0;
+    padding: 0; 
+}
+
+.article_images_item {
+    padding: 10px 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background: #ffffff;
+}

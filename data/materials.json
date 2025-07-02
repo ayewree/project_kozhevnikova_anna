@@ -1,0 +1,25 @@
+{
+  "materials": [
+    {
+      "icon": "images/grammar-icon.png",
+      "iconAlt": "Иконка грамматики",
+      "title": "Грамматические правила",
+      "description": "Полный справочник по английской грамматике с примерами",
+      "link": "grammar.html"
+    },
+    {
+      "icon": "images/vocabulary-icon.png",
+      "iconAlt": "Иконка словаря",
+      "title": "Тематическая лексика",
+      "description": "Слова и выражения по популярным темам",
+      "link": "vocabulary.html"
+    },
+    {
+      "icon": "images/games-icon.png",
+      "iconAlt": "Иконка игр",
+      "title": "Обучающие игры",
+      "description": "Интерактивные задания для уроков английского",
+      "link": "games.html"
+    }
+  ]
+}

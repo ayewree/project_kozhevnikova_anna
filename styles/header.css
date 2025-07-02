@@ -1,0 +1,95 @@
+header{
+    background-color: rgb(255, 255, 255); 
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 5px;
+    border-bottom: 5px solid #c78264;
+    padding-bottom: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;    
+}
+
+.logotype img {
+    height: 70px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu li{
+    width: 200px;
+    list-style: none;
+    background: #91c2bd;
+    position: relative;
+    border-radius: 5px;
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.menu a:hover{
+    background: #6ca59e;
+}
+
+.menu ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu-icon {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.menu-icon button {
+    padding: 8px 15px;
+    background-color: #d7987d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    box-sizing: border-box; 
+}
+
+.menu-icon button:hover {
+    background-color: #cf8362;
+}
+
+.menu-icon input[type="search"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}

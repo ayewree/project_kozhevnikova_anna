@@ -1,0 +1,18 @@
+/* Подключение шрифтов */
+@import "fonts.css";
+/* Подключение стилей относящихся к странице блога */
+@import "blogs.css";
+/* Подключение стилей относящихся к header */
+@import "header.css";
+/* Подключение стилей относящихся к footer */
+@import "footer.css";
+/* Подключение стилей относящихся к main */
+@import "main.css";
+/* Подключение стилей модального окна */
+@import "modal.css";
+/* Подключение стилей preloader */
+@import "preloader.css";
+/* Подключение стилей slider */
+@import "slider.css";
+/* Подключение стилей карточек */
+@import "card.css";

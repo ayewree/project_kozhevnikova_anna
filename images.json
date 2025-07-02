@@ -1,0 +1,26 @@
+[
+    {
+        "imageUrl": [
+            "images/big_ben1.jpg",
+            "images/big_ben2.jpg"
+        ],
+        "imageAlt": "Биг Бен",
+        "imageWidth": 500
+    },
+    {
+        "imageUrl": [
+            "images/london_eye1.jpg",
+            "images/london_eye2.jpg"
+        ],
+        "imageAlt": "Колесо обозрения",
+        "imageWidth": 500
+    },
+    {
+        "imageUrl": [
+            "images/trafalgar_square1.jpg",
+            "images/trafalgar_square2.jpg"
+        ],
+        "imageAlt": "Трафальгарская площадь",
+        "imageWidth": 500
+    }
+]
